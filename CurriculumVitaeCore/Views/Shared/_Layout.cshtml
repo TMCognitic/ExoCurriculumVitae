@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CurriculumVitaeCore</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="~/Home/Index">Acceuil</a>
+            <a href="~/Home/About">Qui suis-je</a>
+            <a href="~/Home/Contact">Contact</a>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="footer">
+            &copy; 2020 - CurriculumVitaeCore - Morre Thierry
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
